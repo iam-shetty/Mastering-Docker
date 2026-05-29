@@ -1,4 +1,6 @@
 FROM ubuntu
+ENV DEBIAN_FRONTEND=noninteractive
+
 WORKDIR /app
 COPY requirements.txt /app/
 COPY devops /app/
